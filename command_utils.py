@@ -26,7 +26,7 @@ def train_input():
     parser.add_argument('--save_dir', type=str, default='',
                         help='folder where model checkpoints gets saved to')
     parser.add_argument('--arch', type=str,
-                        default='densenet121', help='which CNN model to use')
+                        default='densenet121', help='choose between vgg and densenet')
     parser.add_argument('--learning_rate', type=float,
                         default=0.001, help='learning_rate for model')
     parser.add_argument('--hidden_units', type=str,

@@ -52,6 +52,7 @@ def main():
 
 def train(model, dataloaders, datasets, criterion, optimizer, scheduler, device, epochs):
     start = time.time()
+    print(f'Training with {device}\n')
 
     for epoch in range(epochs):
         print('Epoch {}/{}'.format(epoch+1, epochs))
